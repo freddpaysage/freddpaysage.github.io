@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarifs - Fredd Paysage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --vert-fonce: #1C5734; --marron-fonce: #3e2723; --marron-clair: #D9CDB0; --blanc: #ffffff; --fond-gris: #f9f9f9; }
+        body { font-family: 'Montserrat', Arial, sans-serif; margin: 0; padding: 0; background-color: var(--fond-gris); color: #333; }
+        a { text-decoration: none; color: inherit; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        header { background-color: var(--blanc); box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        
+        .top-bar { background-color: var(--fond-gris); padding: 12px 0; text-align: right; border-bottom: 1px solid #ddd; }
+        .top-bar span { margin-left: 15px; }
+        .top-bar a { background-color: var(--vert-fonce); color: var(--blanc); padding: 8px 18px; border-radius: 20px; font-weight: bold; font-size: 13px; transition: background-color 0.3s; display: inline-block; }
+        .top-bar a:hover { background-color: var(--marron-fonce); color: var(--blanc); }
+        
+        .nav-bar { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; }
+        .logo-container { display: flex; align-items: center; }
+        .logo { width: 100px; height: auto; margin-right: 15px; }
+        .company-name { font-size: 28px; color: var(--vert-fonce); font-weight: bold; text-transform: uppercase; }
+        
+        .nav-menu { list-style: none; display: flex; margin: 0; padding: 0; }
+        .nav-menu li { margin-left: 30px; }
+        .nav-menu li:first-child { margin-left: 0; }
+        .nav-menu li a { font-weight: bold; color: var(--vert-fonce); text-transform: uppercase; font-size: 14px; padding-bottom: 5px; }
+        .nav-menu li a:hover { color: #000; border-bottom: 2px solid var(--vert-fonce); }
+
+        .hero-banner { width: 100%; border-bottom: 5px solid var(--vert-fonce); }
+        .hero-banner img { width: 100%; height: auto; display: block; }
+
+        .main-content { padding: 50px 20px; max-width: 800px; margin: 0 auto; }
+        .content-box { background-color: var(--blanc); padding: 40px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+
+        .fredd-tarifs-table { width: 100%; border-collapse: collapse; font-size: 16px; margin-top: 10px; }
+        .fredd-tarifs-table thead { background-color: var(--vert-fonce); color: var(--blanc); text-transform: uppercase; }
+        .fredd-tarifs-table th { padding: 15px; text-align: left; border: 1px solid var(--vert-fonce); }
+        .fredd-tarifs-table tbody { background-color: var(--marron-clair); }
+        .fredd-tarifs-table td { padding: 15px; border: 1px solid #c5b99e; color: #000; font-weight: bold; }
+        .fredd-tarifs-table td:last-child { text-align: right; font-size: 18px; }
+        .fredd-tarifs-table tfoot { background-color: #eee9dd; text-align: center; }
+        .fredd-tarifs-table tfoot td { padding: 15px; font-style: italic; color: #333; font-size: 14px; font-weight: normal; border: 1px solid #c5b99e; }
+
+        .contact-cta { background-color: var(--marron-clair); padding: 50px 20px; text-align: center; margin-top: 50px; }
+        .contact-cta h2 { color: var(--vert-fonce); font-size: 26px; margin-top: 0; margin-bottom: 15px; text-transform: uppercase; }
+        .contact-cta p { color: #333; margin-bottom: 30px; font-size: 16px; font-weight: bold; }
+        .cta-buttons { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .btn { padding: 15px 30px; border-radius: 8px; font-weight: bold; font-size: 18px; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: inline-block; }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 6px 10px rgba(0,0,0,0.15); color: var(--blanc); }
+        .btn-vert { background-color: var(--vert-fonce); color: var(--blanc); }
+        .btn-marron { background-color: var(--marron-fonce); color: var(--blanc); }
+
+        footer { background-color: var(--marron-fonce); color: var(--blanc); text-align: center; padding: 20px 0; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <span><a href="tel:0618360927">📞 06 18 36 09 27</a></span>
+                <span><a href="mailto:freddnec@me.com">✉️ freddnec@me.com</a></span>
+            </div>
+        </div>
+        <div class="nav-bar container">
+            <div class="logo-container">
+                <img src="images/Logo_Fredd02.png" alt="Logo Fredd Paysage" class="logo">
+                <span class="company-name">Fredd Paysage</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="tarifs.html" style="border-bottom: 2px solid var(--vert-fonce);">Tarifs</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="hero-banner">
+        <img src="images/tarifs.png" alt="Tarifs - Fredd Paysage">
+    </div>
+
+    <main class="main-content">
+        <div class="content-box">
+            <table class="fredd-tarifs-table">
+                <thead>
+                    <tr>
+                        <th>SERVICES</th>
+                        <th>PRIX</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tonte &lt; 300m²</td>
+                        <td>€45</td>
+                    </tr>
+                    <tr>
+                        <td>Taille Haie &lt; 15m</td>
+                        <td>€110</td>
+                    </tr>
+                    <tr>
+                        <td>Forfait Entretien Mensuel (Petite Surface)</td>
+                        <td>€90</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Tarifs sur devis pour surfaces spécifiques. N'hésitez pas à me contacter.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </main>
+
+    <section class="contact-cta">
+        <div class="container">
+            <h2>Besoin d'une intervention dans votre jardin ?</h2>
+            <p>N'hésitez pas à me contacter pour échanger sur votre projet ou obtenir un devis.</p>
+            <div class="cta-buttons">
+                <a href="tel:0618360927" class="btn btn-vert">📞 06 18 36 09 27</a>
+                <a href="mailto:freddnec@me.com" class="btn btn-marron">✉️ freddnec@me.com</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">&copy; 2026 Fredd Paysage - Tous Droits Réservés.</div>
+    </footer>
+
+</body>
+</html>

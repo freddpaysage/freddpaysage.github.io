@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fredd Paysage - Accueil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --vert-fonce: #1C5734;
+            --marron-fonce: #3e2723;
+            --marron-clair: #D9CDB0;
+            --blanc: #ffffff;
+            --fond-gris: #f9f9f9;
+        }
+
+        body { font-family: 'Montserrat', Arial, sans-serif; margin: 0; padding: 0; background-color: var(--fond-gris); color: #333; }
+        a { text-decoration: none; color: inherit; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        header { background-color: var(--blanc); box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        
+        /* --- NOUVEAU STYLE : BOUTONS DE CONTACT EN HAUT --- */
+        .top-bar { background-color: var(--fond-gris); padding: 12px 0; text-align: right; border-bottom: 1px solid #ddd; }
+        .top-bar span { margin-left: 15px; }
+        .top-bar a { background-color: var(--vert-fonce); color: var(--blanc); padding: 8px 18px; border-radius: 20px; font-weight: bold; font-size: 13px; transition: background-color 0.3s; display: inline-block; }
+        .top-bar a:hover { background-color: var(--marron-fonce); color: var(--blanc); }
+        
+        .nav-bar { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; }
+        .logo-container { display: flex; align-items: center; }
+        .logo { width: 100px; height: auto; margin-right: 15px; }
+        .company-name { font-size: 28px; color: var(--vert-fonce); font-weight: bold; text-transform: uppercase; }
+        
+        .nav-menu { list-style: none; display: flex; margin: 0; padding: 0; }
+        .nav-menu li { margin-left: 30px; } 
+        .nav-menu li:first-child { margin-left: 0; }
+        .nav-menu li a { font-weight: bold; color: var(--vert-fonce); text-transform: uppercase; font-size: 14px; padding-bottom: 5px; }
+        .nav-menu li a:hover { color: #000; border-bottom: 2px solid var(--vert-fonce); }
+
+        .hero-banner { width: 100%; border-bottom: 5px solid var(--vert-fonce); }
+        .hero-banner img { width: 100%; height: auto; display: block; }
+
+        .main-content { padding: 50px 20px; }
+        .fredd-section { display: flex; justify-content: space-between; gap: 40px; max-width: 1200px; margin: 0 auto; background-color: var(--blanc); padding: 40px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .fredd-column { width: 48%; }
+        .fredd-column-title { text-align: center; text-transform: uppercase; font-weight: bold; font-size: 20px; margin-bottom: 10px; color: var(--vert-fonce); }
+        .fredd-separator { border: 0; border-top: 2px solid var(--marron-clair); width: 100%; margin: 0 auto 30px; }
+
+        .bio-text p { font-size: 15px; line-height: 1.6; margin-bottom: 15px; text-align: justify; }
+        .bio-text strong { color: var(--vert-fonce); }
+
+        .fredd-services-list { list-style: none; padding: 0; margin: 0; }
+        .fredd-service-item { display: flex; align-items: center; margin-bottom: 15px; }
+        .fredd-service-icon { width: 70px; margin-right: 20px; flex-shrink: 0; }
+        .fredd-service-icon img { width: 100%; height: auto; display: block; }
+        .fredd-service-text { display: flex; flex-direction: column; }
+        .fredd-service-title { font-weight: bold; text-transform: uppercase; margin: 0; font-size: 14px; color: #000; }
+
+        /* --- NOUVEAU STYLE : BLOC CONTACT CTA (Call to Action) --- */
+        .contact-cta { background-color: var(--marron-clair); padding: 50px 20px; text-align: center; margin-top: 50px; }
+        .contact-cta h2 { color: var(--vert-fonce); font-size: 26px; margin-top: 0; margin-bottom: 15px; text-transform: uppercase; }
+        .contact-cta p { color: #333; margin-bottom: 30px; font-size: 16px; font-weight: bold; }
+        .cta-buttons { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .btn { padding: 15px 30px; border-radius: 8px; font-weight: bold; font-size: 18px; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: inline-block; }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 6px 10px rgba(0,0,0,0.15); color: var(--blanc); }
+        .btn-vert { background-color: var(--vert-fonce); color: var(--blanc); }
+        .btn-marron { background-color: var(--marron-fonce); color: var(--blanc); }
+
+        footer { background-color: var(--marron-fonce); color: var(--blanc); text-align: center; padding: 20px 0; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <span><a href="tel:0618360927">📞 06 18 36 09 27</a></span>
+                <span><a href="mailto:freddnec@me.com">✉️ freddnec@me.com</a></span>
+            </div>
+        </div>
+        <div class="nav-bar container">
+            <div class="logo-container">
+                <img src="images/Logo_Fredd02.png" alt="Logo Fredd Paysage" class="logo">
+                <span class="company-name">Fredd Paysage</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" style="border-bottom: 2px solid var(--vert-fonce);">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="tarifs.html">Tarifs</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="hero-banner">
+        <img src="images/fde_site_fredd.png" alt="Sublimez votre jardin - Fredd Paysage">
+    </div>
+
+    <main class="main-content">
+        <section class="fredd-section">
+            
+            <div class="fredd-column">
+                <h3 class="fredd-column-title">QUI SUIS-JE ?</h3>
+                <hr class="fredd-separator">
+              <div class="bio-text">
+                    <p>Passionné par l'aménagement extérieur et le travail de la terre, je mets mon exigence et mon sens du travail bien fait au service de votre jardin.</p>
+                    <p>Enseignant de profession, j'ai choisi de développer cette activité secondaire pour renouer avec le travail manuel en plein air, et pour apporter un service concret et de proximité.</p>
+                <p>Mon approche est méthodique : <strong>nous évaluons la situation</strong> sur le terrain, <strong>nous définissons la meilleure intervention</strong> selon vos besoins, <strong>je réalise les travaux</strong> avec rigueur, et <strong>je m'assure de vous laisser un espace propre</strong> et sublimé.</p>
+                  <p>Je suis à votre disposition sur le secteur de Masny et environs pour l'entretien et la valorisation de vos espaces verts.</p>
+                </div>
+            </div>
+
+            <div class="fredd-column">
+                <h3 class="fredd-column-title">MES SERVICES</h3>
+                <hr class="fredd-separator">
+                <ul class="fredd-services-list">
+                    <li class="fredd-service-item">
+                        <div class="fredd-service-icon"><img src="images/pelouse.png" alt="Entretien de pelouse"></div>
+                        <div class="fredd-service-text"><h4 class="fredd-service-title">ENTRETIEN DE PELOUSES</h4></div>
+                    </li>
+                    <li class="fredd-service-item">
+                        <div class="fredd-service-icon"><img src="images/massif.png" alt="Création de massifs"></div>
+                        <div class="fredd-service-text"><h4 class="fredd-service-title">CRÉATION DE MASSIFS</h4></div>
+                    </li>
+                    <li class="fredd-service-item">
+                        <div class="fredd-service-icon"><img src="images/elagage.png" alt="Élagage raisonné"></div>
+                        <div class="fredd-service-text"><h4 class="fredd-service-title">ÉLAGAGE RAISONNÉ</h4></div>
+                    </li>
+                    <li class="fredd-service-item">
+                        <div class="fredd-service-icon"><img src="images/taille.png" alt="Taille de haies"></div>
+                        <div class="fredd-service-text"><h4 class="fredd-service-title">TAILLE DE HAIES ET ARBUSTES</h4></div>
+                    </li>
+                    <li class="fredd-service-item">
+                        <div class="fredd-service-icon"><img src="images/debroussaillage.png" alt="Débroussaillage"></div>
+                        <div class="fredd-service-text"><h4 class="fredd-service-title">DÉBROUSSAILLAGE</h4></div>
+                    </li>
+                </ul>
+                <div style="text-align: center; margin-top: 20px;">
+                    <a href="services.html" style="color: var(--vert-fonce); font-weight: bold; text-decoration: underline;">Voir le détail de mes services ➔</a>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <!-- NOUVEAU BLOC : APPEL À L'ACTION -->
+    <section class="contact-cta">
+        <div class="container">
+            <h2>Besoin d'une intervention dans votre jardin ?</h2>
+            <p>N'hésitez pas à me contacter pour échanger sur votre projet ou obtenir un devis.</p>
+            <div class="cta-buttons">
+                <a href="tel:0618360927" class="btn btn-vert">📞 06 18 36 09 27</a>
+                <a href="mailto:freddnec@me.com" class="btn btn-marron">✉️ freddnec@me.com</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">&copy; 2026 Fredd Paysage - Tous Droits Réservés.</div>
+    </footer>
+
+</body>
+</html>

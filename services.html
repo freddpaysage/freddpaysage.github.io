@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Services - Fredd Paysage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --vert-fonce: #1C5734; --marron-fonce: #3e2723; --marron-clair: #D9CDB0; --blanc: #ffffff; --fond-gris: #f9f9f9; }
+        body { font-family: 'Montserrat', Arial, sans-serif; margin: 0; padding: 0; background-color: var(--fond-gris); color: #333; }
+        a { text-decoration: none; color: inherit; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        header { background-color: var(--blanc); box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        
+        .top-bar { background-color: var(--fond-gris); padding: 12px 0; text-align: right; border-bottom: 1px solid #ddd; }
+        .top-bar span { margin-left: 15px; }
+        .top-bar a { background-color: var(--vert-fonce); color: var(--blanc); padding: 8px 18px; border-radius: 20px; font-weight: bold; font-size: 13px; transition: background-color 0.3s; display: inline-block; }
+        .top-bar a:hover { background-color: var(--marron-fonce); color: var(--blanc); }
+        
+        .nav-bar { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; }
+        .logo-container { display: flex; align-items: center; }
+        .logo { width: 100px; height: auto; margin-right: 15px; }
+        .company-name { font-size: 28px; color: var(--vert-fonce); font-weight: bold; text-transform: uppercase; }
+        
+        .nav-menu { list-style: none; display: flex; margin: 0; padding: 0; }
+        .nav-menu li { margin-left: 30px; }
+        .nav-menu li:first-child { margin-left: 0; }
+        .nav-menu li a { font-weight: bold; color: var(--vert-fonce); text-transform: uppercase; font-size: 14px; padding-bottom: 5px; }
+        .nav-menu li a:hover { color: #000; border-bottom: 2px solid var(--vert-fonce); }
+
+        .hero-banner { width: 100%; border-bottom: 5px solid var(--vert-fonce); }
+        .hero-banner img { width: 100%; height: auto; display: block; }
+
+        .main-content { padding: 50px 20px; max-width: 900px; margin: 0 auto; }
+        
+        .detailed-service { background-color: var(--blanc); padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); margin-bottom: 30px; display: flex; align-items: center; gap: 30px; }
+        .detailed-service-icon { width: 150px; flex-shrink: 0; }
+        .detailed-service-icon img { width: 100%; height: auto; }
+        .detailed-service-text h2 { color: var(--vert-fonce); margin-top: 0; margin-bottom: 10px; font-size: 20px; text-transform: uppercase; }
+        .detailed-service-text p { font-size: 15px; line-height: 1.6; color: #555; margin: 0; }
+
+        .contact-cta { background-color: var(--marron-clair); padding: 50px 20px; text-align: center; margin-top: 50px; }
+        .contact-cta h2 { color: var(--vert-fonce); font-size: 26px; margin-top: 0; margin-bottom: 15px; text-transform: uppercase; }
+        .contact-cta p { color: #333; margin-bottom: 30px; font-size: 16px; font-weight: bold; }
+        .cta-buttons { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .btn { padding: 15px 30px; border-radius: 8px; font-weight: bold; font-size: 18px; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: inline-block; }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 6px 10px rgba(0,0,0,0.15); color: var(--blanc); }
+        .btn-vert { background-color: var(--vert-fonce); color: var(--blanc); }
+        .btn-marron { background-color: var(--marron-fonce); color: var(--blanc); }
+
+        footer { background-color: var(--marron-fonce); color: var(--blanc); text-align: center; padding: 20px 0; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <span><a href="tel:0618360927">📞 06 18 36 09 27</a></span>
+                <span><a href="mailto:freddnec@me.com">✉️ freddnec@me.com</a></span>
+            </div>
+        </div>
+        <div class="nav-bar container">
+            <div class="logo-container">
+                <img src="images/Logo_Fredd02.png" alt="Logo Fredd Paysage" class="logo">
+                <span class="company-name">Fredd Paysage</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html" style="border-bottom: 2px solid var(--vert-fonce);">Services</a></li>
+                <li><a href="tarifs.html">Tarifs</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="hero-banner">
+        <img src="images/messervices.png" alt="Mes Services - Fredd Paysage">
+    </div>
+
+    <main class="main-content">
+        
+        <div class="detailed-service">
+            <div class="detailed-service-icon"><img src="images/pelouse.png" alt="Entretien de pelouse"></div>
+            <div class="detailed-service-text">
+                <h2>Entretien de Pelouses</h2>
+                <p>Intervention régulière ou ponctuelle pour la tonte de votre gazon. Je m'assure d'une coupe propre, du traitement des bordures et je vous conseille sur l'aménagement de zones demandant moins d'entretien pour un jardin toujours impeccable.</p>
+            </div>
+        </div>
+
+        <div class="detailed-service">
+            <div class="detailed-service-icon"><img src="images/massif.png" alt="Création de massifs"></div>
+            <div class="detailed-service-text">
+                <h2>Création de Massifs</h2>
+                <p>Conception et réalisation de massifs floraux et d'aménagements paysagers sur mesure. Je sélectionne avec vous les végétaux adaptés à votre sol et à l'exposition pour créer des espaces harmonieux qui évolueront magnifiquement au fil des saisons.</p>
+            </div>
+        </div>
+
+        <div class="detailed-service">
+            <div class="detailed-service-icon"><img src="images/elagage.png" alt="Élagage raisonné"></div>
+            <div class="detailed-service-text">
+                <h2>Élagage Raisonné</h2>
+                <p>Je privilégie une méthode d'élagage douce et respectueuse de l'arbre. Les coupes sont réfléchies pour préserver la santé et la silhouette naturelle de vos végétaux tout en assurant la sécurité de votre environnement.</p>
+            </div>
+        </div>
+
+        <div class="detailed-service">
+            <div class="detailed-service-icon"><img src="images/taille.png" alt="Taille de haies"></div>
+            <div class="detailed-service-text">
+                <h2>Taille de Haies et Arbustes</h2>
+                <p>Maintien de la forme, de la densité et de la santé de vos haies et arbustes. Que ce soit pour une taille de formation, d'entretien ou de rabattage, j'adapte mes outils et mes techniques au type de végétal concerné.</p>
+            </div>
+        </div>
+
+        <div class="detailed-service">
+            <div class="detailed-service-icon"><img src="images/debroussaillage.png" alt="Débroussaillage"></div>
+            <div class="detailed-service-text">
+                <h2>Débroussaillage</h2>
+                <p>Nettoyage complet de terrains envahis par la végétation. J'interviens pour sécuriser vos abords, prévenir les risques d'incendie et redonner un aspect soigné à vos surfaces laissées à l'abandon.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <section class="contact-cta">
+        <div class="container">
+            <h2>Besoin d'une intervention dans votre jardin ?</h2>
+            <p>N'hésitez pas à me contacter pour échanger sur votre projet ou obtenir un devis.</p>
+            <div class="cta-buttons">
+                <a href="tel:0618360927" class="btn btn-vert">📞 06 18 36 09 27</a>
+                <a href="mailto:freddnec@me.com" class="btn btn-marron">✉️ freddnec@me.com</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">&copy; 2026 Fredd Paysage - Tous Droits Réservés.</div>
+    </footer>
+
+</body>
+</html>
